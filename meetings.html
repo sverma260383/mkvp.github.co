@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Mahakoshal Vigyan Parishad</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body >
+
+  <!-- Sub Header -->
+ 
+  <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav" style="color: black;">
+                          <li ><a href="index.html"  style="color: black;">Home</a></li>
+                        <li><a href="meetings.html" style="color: black;">Meetings</a></li>
+                        <li class="has-sub">
+                            <a href="javascript:void(1)" style="color: black;">About Us</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html" style="color: black;">About MKVP</a></li>
+                                <li><a href="Units.html" style="color: black;">State/ Units Official</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="javascript:void(0)" style="color: black;">Gallery</a>
+                            <ul class="sub-menu">
+                                <li><a href="Image.html" style="color: black;">Image</a></li>
+                                <li><a href="https://www.youtube.com/@mahakoshalvigyanparishad3463" style="color: black;">Video</a></li>
+                            </ul>
+                        </li>
+                        <li class="scroll-to-section"><a href="#contact" style="color: black;">Contact Us</a></li>
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="services">
+       <div class="container">
+ <div class="row">
+  <div class="col-lg-12">
+  
+          
+           <div class="item" style="margin-top: 200px;"> 
+	<h2 style="color:yellow">Upcoming Mahakoshal Vigyan Parishad Meetings</h2>
+
+<table class="meeting-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>15th October 2024</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>Jabalpur Science College</td>
+            <td>Discussion on recent developments in scientific research and innovations.</td>
+        </tr>
+        <tr>
+            <td>20th November 2024</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Rewa University</td>
+            <td>Seminar on the impact of climate change on central India's ecosystem.</td>
+        </tr>
+        <tr>
+            <td>5th December 2024</td>
+            <td>9:00 AM - 11:30 AM</td>
+            <td>Bhopal Science Center</td>
+            <td>Workshop on technology integration in agricultural sciences.</td>
+        </tr>
+        <tr>
+            <td>18th January 2025</td>
+            <td>11:00 AM - 1:00 PM</td>
+            <td>Mahakoshal University Auditorium</td>
+            <td>Annual general meeting and award ceremony for outstanding scientific contributions.</td>
+        </tr>
+    </tbody>
+</table>
+ </div></div></div></div></div>
+ </section>
+ 
+    <div class="footer">
+      <p>Copyright © MKVV Rights Reserved. 
+          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates"></a></p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
+</html>

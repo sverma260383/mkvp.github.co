@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: green;
+      padding: 20px;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {color: rED;
+      text-align: center;
+	 
+    }
+	 h3 {color: BLACK;
+      text-align: center;
+	 
+    }
+    label {
+      display: RED;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .submit-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+    .error-message {
+      color: red;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Mahakoshal Vigyan Parishad</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body >
+
+  <!-- Sub Header -->
+ 
+  <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="#top" class="active" style="color: black;">Home</a></li>
+                        
+                        <li><a href="meetings.html" style="color: black;">Meetings</a></li>
+                        <li class="has-sub">
+                            <a href="javascript:void(1)" style="color: black;">About Us</a>
+                            <ul class="sub-menu">
+                                <li><a href="meetings.html" style="color: black;">About MKVP</a></li>
+                                <li><a href="meeting-details.html" style="color: black;">State/ Units Official</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="has-sub">
+                            <a href="javascript:void(0)" style="color: black;">Gallery</a>
+                            <ul class="sub-menu">
+                                <li><a href="meetings.html" style="color: black;">Image</a></li>
+                                <li><a href="meeting-details.html" style="color: black;">Video</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="scroll-to-section"><a href="#contact" style="color: black;">Contact Us</a></li>
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="services">
+       <div class="container">
+ <div class="row">
+  <div class="col-lg-12">
+  
+          
+           <div class="item" style="margin-top: 200px;"> 
+	  <div class="form-container">
+    <H1>Registration Form</H1>
+    
+    <form id="registrationForm" action="#" method="POST">
+
+      <!-- Step 1: Membership Category -->
+      <h3>Step 1: Select Membership Category</h3>
+      <label for="membership-category">Membership Category</label>
+      <select id="membership-category" name="membership-category" required>
+        <option value="">Select a category</option>
+        <option value="Lifetime">Lifetime (INR) - ₹1,000.00</option>
+		 <option value="Yearly">Yearly (INR) - ₹500.00</option>
+      </select>
+
+      <!-- Step 2: Personal Details -->
+      <div id="personal-details-section" class="hidden">
+        <h3>Step 2: Enter Your Personal Details</h3>
+        <label for="full-name">Enter your full name *</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="gender">Select your gender at birth *</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Select your date of birth *</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="interest">Select area of interest *</label>
+        <select id="interest" name="interest" required>
+          <option value="">Select</option>
+          <option value="traditional">Traditional Knowledge and Applications</option>
+          <option value="environment">Environment</option>
+          <option value="energy">Energy</option>
+          <option value="health">Health Sciences</option>
+          <option value="engineering">Engineering Sciences</option>
+          <option value="literature">Literature</option>
+          <option value="infrastructure">Infrastructure, Technology and Communications</option>
+          <option value="waste">Waste Management</option>
+          <option value="women">Woman Empowerment</option>
+          <option value="student">School Student Activities</option>
+          <option value="agriculture">Agriculture and Veterinary Science</option>
+          <option value="indic">Indic Science</option>
+          <option value="others">Others</option>
+        </select>
+
+        <label for="institute">Enter name of affiliated institute</label>
+        <input type="text" id="institute" name="institute" placeholder="Example, Pune University">
+
+        <label for="designation">Enter your designation</label>
+        <input type="text" id="designation" name="designation">
+      </div>
+
+      <!-- Step 3: Contact Details -->
+      <div id="contact-details-section" class="hidden">
+        <h3>Step 3: Enter Your Contact Details</h3>
+        <label for="email">Enter your primary email address *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobile">Enter your primary mobile number *</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+        <label for="whatsapp">Enter your WhatsApp number</label>
+        <input type="tel" id="whatsapp" name="whatsapp">
+        <input type="checkbox" id="same-as-mobile" name="same-as-mobile" onclick="copyMobileNumber()"> Same as primary mobile
+      </div>
+
+      <!-- Step 4: Password -->
+      <div id="password-section" class="hidden">
+        <h3>Step 4: Set Password</h3>
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required>
+        <small>Password must be at least 6 characters long and contain alphanumeric characters and special symbols (! $ % & *).</small>
+
+        <label for="confirm-password">Confirm Password *</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <div class="error-message" id="password-error"></div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    // Function to show/hide sections based on form inputs
+    document.getElementById('membership-category').addEventListener('change', function() {
+      var membershipValue = this.value;
+      if (membershipValue !== "") {
+        document.getElementById('personal-details-section').classList.remove('hidden');
+      } else {
+        document.getElementById('personal-details-section').classList.add('hidden');
+        document.getElementById('contact-details-section').classList.add('hidden');
+        document.getElementById('password-section').classList.add('hidden');
+      }
+    });
+
+    document.getElementById('full-name').addEventListener('input', function() {
+      if (this.value.trim() !== "") {
+        document.getElementById('contact-details-section').classList.remove('hidden');
+      } else {
+        document.getElementById('contact-details-section').classList.add('hidden');
+        document.getElementById('password-section').classList.add('hidden');
+      }
+    });
+
+    document.getElementById('email').addEventListener('input', function() {
+      if (this.value.trim() !== "") {
+        document.getElementById('password-section').classList.remove('hidden');
+      } else {
+        document.getElementById('password-section').classList.add('hidden');
+      }
+    });
+
+    // Function to copy mobile number to WhatsApp field
+    function copyMobileNumber() {
+      var mobile = document.getElementById("mobile").value;
+      var whatsapp = document.getElementById("whatsapp");
+      if (document.getElementById("same-as-mobile").checked) {
+        whatsapp.value = mobile;
+      } else {
+        whatsapp.value = "";
+      }
+    }
+
+    // Validate passwords match
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+      var password = document.getElementById('password').value;
+      var confirmPassword = document.getElementById('confirm-password').value;
+      if (password !== confirmPassword) {
+        document.getElementById('password-error').innerText = 'Passwords do not match!';
+        event.preventDefault();
+      } else {
+        document.getElementById('password-error').innerText = '';
+      }
+    });
+  </script>
+ </div></div></div></div></div>
+ </section>
+ 
+    <div class="footer">
+      <p>Copyright © MKVV Rights Reserved. 
+          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates"></a></p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
+</html>
